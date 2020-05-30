@@ -1,0 +1,181 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-05-30T16:30:58.451Z",
+  "__export_source": "insomnia.desktop.app:v7.1.1",
+  "resources": [
+    {
+      "_id": "req_bacfb07a559040dda44f41caf5fd0446",
+      "authentication": {},
+      "body": {},
+      "created": 1590432664108,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1590432664109,
+      "method": "GET",
+      "modified": 1590437235954,
+      "name": "Index",
+      "parameters": [],
+      "parentId": "wrk_fccd7ad9dce44f2c96179abf440dc192",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": " {{ base_url  }}/products?page=2",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_fccd7ad9dce44f2c96179abf440dc192",
+      "created": 1590432618463,
+      "description": "",
+      "modified": 1590432618463,
+      "name": "NodeJS",
+      "parentId": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_f9c1d937d1924ae9b6e9e7461804734f",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"ReactJS\",\n\t\"description\": \"Biblioteca para criar aplicaçãoes interativas com Javascript\",\n\t\"url\": \"http://github/facebook/react\"\n}"
+      },
+      "created": 1590433106183,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_265b6c4e3d91432e906bd60d3905621e",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1589999317665.5,
+      "method": "POST",
+      "modified": 1590433282993,
+      "name": "Create",
+      "parameters": [],
+      "parentId": "wrk_fccd7ad9dce44f2c96179abf440dc192",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": " {{ base_url  }}/products",
+      "_type": "request"
+    },
+    {
+      "_id": "req_09ac667080a946ff87109fdeb218bdbf",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"React Native\"\n}"
+      },
+      "created": 1590435640661,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_265b6c4e3d91432e906bd60d3905621e",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1589890981054.625,
+      "method": "PUT",
+      "modified": 1590435878113,
+      "name": "Updade",
+      "parameters": [],
+      "parentId": "wrk_fccd7ad9dce44f2c96179abf440dc192",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": " {{ base_url  }}/products/5ecc0bbdaffea43399a8010c",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3859a8674ac3414e8066ea5c8b3df247",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"ReactJS\",\n\t\"description\": \"Biblioteca para criar aplicaçãoes interativas com Javascript\",\n\t\"url\": \"http://github/facebook/react\"\n}"
+      },
+      "created": 1590435244328,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_265b6c4e3d91432e906bd60d3905621e",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1589863896901.9062,
+      "method": "GET",
+      "modified": 1590436183469,
+      "name": "Show",
+      "parameters": [],
+      "parentId": "wrk_fccd7ad9dce44f2c96179abf440dc192",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": " {{ base_url  }}/products/5ecc16aa2c3b55421602782f",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ab9c90a3342a4f75a10f8668a3b86ab1",
+      "authentication": {},
+      "body": {},
+      "created": 1590436002011,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1589836812749.1875,
+      "method": "DELETE",
+      "modified": 1590436027790,
+      "name": "Delete",
+      "parameters": [],
+      "parentId": "wrk_fccd7ad9dce44f2c96179abf440dc192",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": " {{ base_url  }}/products/5ecc0bbdaffea43399a8010c",
+      "_type": "request"
+    },
+    {
+      "_id": "env_add15ffb3e75be545e9ae3efa4020dce36c7358c",
+      "color": null,
+      "created": 1590432618973,
+      "data": { "base_url": "http://localhost:3001/api" },
+      "dataPropertyOrder": { "&": ["base_url"] },
+      "isPrivate": false,
+      "metaSortKey": 1590432618973,
+      "modified": 1590432800371,
+      "name": "Base Environment",
+      "parentId": "wrk_fccd7ad9dce44f2c96179abf440dc192",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_add15ffb3e75be545e9ae3efa4020dce36c7358c",
+      "cookies": [],
+      "created": 1590432618989,
+      "modified": 1590432618989,
+      "name": "Default Jar",
+      "parentId": "wrk_fccd7ad9dce44f2c96179abf440dc192",
+      "_type": "cookie_jar"
+    }
+  ]
+}

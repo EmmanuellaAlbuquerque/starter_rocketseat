@@ -1,0 +1,108 @@
+mkdir node-api
+cd node-api
+npm init -y
+
+Instalando depêndencias
+npm install express
+
+Configurando servidor/arquivo principal/arquivo que vai inicializar toda a nossa aplicação
+code .
+Rodando: node server.js
+
+Instalando nodemon
+npm install -D nodemon
+
+Configurando o nodemon
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+
+Rodando: npm run dev
+
+Instalando MongoDB
+www.docker.com
+Após instalar o docker
+- docker pull mongo
+
+Subindo uma nova máquina virtual, um novo container.
+Contendo essa instalação rodando.
+- docker run --name mongodb -p 27017:27017 -d mongo
+
+Para ver quais imagens estão rodando:
+- docker ps
+
+Acessando a porta http://localhost:27017/
+Obtemos a saída: It looks like you are trying to access 
+MongoDB over HTTP on the native driver port.
+
+Instalando software robo3t
+- sudo apt update
+- sudo apt install snapd
+- sudo snap install robo3t-snap
+
+On GUI Robo3T:
+
+Click in Create -> Name: Docker
+- Usaremos ele para verificar se os dados estão sendo 
+criados, se os usuários estão sendo persistidos no 
+banco ao fazer as criações no nosso código.
+
+Ao reiniciar o pc, não precisa-se usar o Docker run 
+para reiniciar a imagem. 
+Para ver os bancos pausados(que não estão online)
+-> docker ps -a
+Para restartar a imagem, faça:
+docker start <nomeDaImagem> 
+ex.: docker start mongodb
+
+Conectando Database
+
+Instalando depêndencia de produção
+npm install mongoose
+
+Ao criar vários models podemos utilizar uma biblioteca
+que faz o papel de require em um diretório em todos os
+arquivos automáticamente. Pra não precisarmos fazer require
+em cada um deles.
+npm install require-dir
+
+sem require-dir
+- require('./src/models/Product')
+com require dir
+- requireDir('./src/models')
+
+Configurando Insomnia
+
+No Environment -> Manage Environments
+Set in Base Environment:
+{
+  "base_url": "http://localhost:3001/api"
+}
+Now use:
+base_url/products
+
+
+Paginação da lista
+
+Instalando módulo
+npm install mongoose-paginate
+
+body -> corpo
+params -> id da rota
+query -> parâmetros get
+
+CORS: 
+- não permite acessar a aplicação em outro endereço
+Cross Acess Origen Security
+
+Para permitir o acesso de outros domínios precisamos:
+npm install cors
+
+Para rodar o server da api:
+npm run dev
+
+
+
+
+
+
