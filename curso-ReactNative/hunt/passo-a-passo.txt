@@ -1,0 +1,80 @@
+Iniciando projeto
+react-native init hunt
+
+cd hunt
+npx react-native run-android
+
+Metro Bundler é como se fosse o WebPack da web
+
+Reiniciar o bundler de novo
+react-native start
+
+Para rodar a aplicação:
+expo start
+
+O que são componentes?
+
+1 componente por arquivo é o recomendado
+
+view caixa sem estilização
+
+estilização utiliza o flex box layout
+i.e todos eles estão em display: flex.
+
+yarn add react-navigation
+
+
+Estilizando Header e StatusBar
+
+Instalando o Axios
+yarn add axios
+
+Pasta services
+-- quando se tem algum serviço de envio, ou recebimento de dados.
+-- conexão com banco de dados
+-- consumo a api
+-- criar uma interface para consumir ou receber dados
+
+
+O arrow function nunca cria novo escopo de função ele herda o acima
+dele. por isso o uso de funções arrow function na classe.
+
+state = {}
+O react ouve as alterações no state e toda vez que há uma alteração, ele vai executar o método render de novo.
+-- assim a renderização fica automática
+
+não se pode usar o:
+this.state.counter = 
+usa-se:
+this.setState({ counter: 1 })
+
+ferramenta prettier???
+
+react native component flatList melhor que map
+-- lida melhor com a performance
+
+no react native sempre precisa-se de uma view entre os elementos
+dessa forma, não pode-se fazer
+<Text></Text>
+<Text></Text>
+
+sempre precisa da tag text por volta de todo texto no react native
+
+
+onEndReachedThreshold={}, qual o percentual ao quero chegar ao fim da lista para carregar os novo items
+
+onEndReachedThreshold={0.1} -> 10%, quando tiver 90% da lista escrolada.
+
+quando componente não tem estado e nenhum método a mais, eu posso criar ele no formato de função
+
+
+WebView:-> renderizar um browser dentro da aplicação
+... assim sem sair do app
+
+
+
+
+
+
+
+
