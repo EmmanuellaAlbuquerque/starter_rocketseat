@@ -1,0 +1,73 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: white;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#repo-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+input,
+button {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  border-radius: 50px;
+  outline: none;
+  margin-top: 20px;
+}
+
+input {
+  background-color: whitesmoke;
+  border: 2px solid black;
+  padding-left: 20px;
+  width: 500px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  border: none;
+  width: 200px;
+  height: 50px;
+  background-color: #283044;
+  transition-duration: 0.3s;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #181d33;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  margin-left: 50px;
+}
+
+li {
+  clear: both;
+  margin-top: 20px;
+}
+
+img {
+  width: 80px;
+  float: left;
+  margin-right: 10px;
+}
+
+strong {
+  font-size: 20px;
+}
+
+p {
+  margin: 5px 0;
+}

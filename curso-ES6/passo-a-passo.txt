@@ -1,0 +1,140 @@
+// package.json: armazena as informações de dependência da aplicação
+yarn init
+
+// Instalando dependências
+
+// interface de linha de comando do babel
+yarn add @babel/cli
+
+yarn add @babel/preset-env
+
+yarn add @babel/core
+
+
+// Configurando babel
+// Cria pasta .babelrc e adiciona:
+{
+    "presets": ["@babel/preset-env"]
+}
+// O babel tem vários presets, mas esse específico, entende o ambiente que se
+// está trabalhando (ex.: browser, node, react, react-native) e converte as
+// features para serem entendidas da melhor forma possível.
+
+// Criando nova propriedade: scripts -> forma de executar comandos 
+// pelo terminal que fazem alguma coisa
+
+  // executa o babel pegando o main e enviando para o bundle
+  "scripts": {
+    "dev": "babel ./main.js -o ./bundle.js"
+  }
+
+    // "dev": "babel ./main.js -o ./bundle.js -w"
+    Com o -w monitora as alterações nos arquivos e já coloca no bundle.js
+
+
+// Testando yarn dev
+yarn dev
+
+// Classe foi convertida em função, para que o navegador entenda
+class Teste {
+    metodo() {
+        
+    }
+}
+
+// Instalando plugins para Rest e Spread:
+yarn add @babel/plugin-proposal-object-rest-spread
+// Reconfigurando babelrc:
+{
+    "presets": ["@babel/preset-env"],
+    "plugins": ["@babel/plugin-proposal-object-rest-spread"]
+}
+
+Instalando e Configurando Webpack Server
+-- Mudando o package.json para "devDependencies" ao invés
+-- de "Dependencies"
+
+// "-D" de devDependencies
+yarn add webpack webpack-cli -D
+
+Criando arquivo de configuração do Webpack
+-- webpack.config.js
+
+Instalando babel loader
+yarn add babel-loader -D
+
+Executando o Webpack
+-- Mudando o package.json
+"scripts": {
+  "dev": "babel ./main.js -o ./bundle.js -w"
+}
+-- Result:
+  "scripts": {
+    "dev": "webpack --mode=development -w"
+  }
+
+Organizando pastas:
+src: todo o código javascript utilizado na 
+aplicação. que o webpack precisa monitonar as mudanças
+public: arquivos que não irão trabalhar diretamente
+com o webpack.
+
+Instalando Webpack dev server
+yarn add webpack-dev-server -D
+
+Alterando file webpack.config.js
+devServer: {
+
+},
+
+Alterando o script dev
+-- Antes
+"scripts": {
+  "dev": "webpack --mode=development -w"
+}
+-- Depois
+"scripts": {
+  "dev": "webpack-dev-server --mode=development"
+}
+
+Rodando yarn dev temos:
+Project is running at http://localhost:8080/
+
+-- O webpack-dev-server embute o arquivo bundle.js
+sem precisar cria-lo 
+-- webpack-dev-server serve exatamente para 
+trabalhar-se com o projeto offline
+-- Monitora e faz refresh automaticamente para
+podermos ver as atualizações em tela.
+
+:: Se abrirmos http://localhost:8080/bundle.js ele 
+estará lá, mas não fisicamente na nossa pasta
+
+-- quando for jogar o projeto online::
+"scripts": {
+  "dev": "webpack-dev-server --mode=development",
+  "build": "webpack --mode=production"
+}
+-> yarn build
+
+Instalando plugin Async/await
+yarn add @babel/plugin-transform-async-to-generator -D
+yarn add @babel/polyfill -D
+
+Alterando babelrc:
+{
+    "presets": ["@babel/preset-env"],
+    "plugins": [
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-transform-async-to-generator"
+    ]
+}
+
+Alterando webpack.config.js
+  // arquivo principal
+  entry: ['@babel/polyfill' ,'./src/main.js'],
+
+Instalando Axios
+// não é dependência de desenvolvimento
+yarn add axios
+
