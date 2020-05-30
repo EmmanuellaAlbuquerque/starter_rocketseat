@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" name="nome" placeholder="Digite algo aqui">
+        <button class="botao">Adicionar</button>
+    </div>
+    
+    <script>
+        var inputElement = document.querySelector('input[name=nome]')
+        var btnElement = document.querySelector('button.botao')
+
+        btnElement.onclick = function() {
+            var text = inputElement.value;
+
+            alert(text)
+        }
+
+
+        var linkElement = document.createElement('a')
+
+        /* linkElement.href */
+        linkElement.setAttribute('href', 'http://rocketseat.com.br/')
+        linkElement.setAttribute('target', '_blanck')
+        
+        var textElement = document.createTextNode('Acessar o site da Rockeatseat')
+
+        linkElement.appendChild(textElement)
+
+        var containerElement = document.querySelector('#app')
+
+        containerElement.appendChild(linkElement)
+
+        // remore input
+        // containerElement.removeChild(inputElement)
+
+    </script>
+</body>
+</html>

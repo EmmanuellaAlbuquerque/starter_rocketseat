@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+    <ul id="lista">
+    </ul>
+
+    <script>
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+        var lista = document.getElementById('lista')
+
+        for (nome of nomes) {
+            var elemento = document.createElement('li')
+            var text = document.createTextNode(nome)
+            elemento.appendChild(text)
+            lista.appendChild(elemento)
+        }
+
+    </script>
+</body>
+</html>

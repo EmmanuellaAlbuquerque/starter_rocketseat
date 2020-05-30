@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body style="text-align: center;">
+    <button onclick="criaElemento()">
+        Cria QUADRADO
+    </button>
+    <div class="app">
+    </div>
+
+    <script>
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function criaElemento(){
+            var app = document.querySelector('.app')
+            app.style.display = 'grid';
+            app.style.gridTemplateColumns = 'repeat(auto-fit, minmax(100px, 1fr) )'
+
+            var quadrado = document.createElement('div')
+            quadrado.style.width = '100px'
+            quadrado.style.height = '100px'
+            quadrado.style.backgroundColor = 'red'
+            quadrado.style.marginBottom = '30px'
+            quadrado.addEventListener('mouseover', function() {
+                // var newColor = getRandomColor(); // #E943F0
+                quadrado.style.backgroundColor = getRandomColor();
+        })
+
+            app.appendChild(quadrado)
+        }
+
+        var button = document.querySelector('button')
+        button.style.marginBottom = '30px' 
+        button.style.borderRadius = '8px'
+        button.style.outline = '8px'
+        button.style.border = 'none'
+        button.style.height = '35px'
+        button.style.width = '200px'
+        button.style.backgroundColor = 'black'
+        button.style.cursor = 'pointer'
+        button.style.color = 'white'
+        button.style.fontSize = 'larger'
+
+    </script>
+</body>
+</html>

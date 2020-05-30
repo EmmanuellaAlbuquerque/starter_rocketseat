@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+    <button onclick="criaElemento()">Cria QUADRADO</button>
+
+    <script>
+        function criaElemento(){
+            var body = document.querySelector('body')
+
+            var quadrado = document.createElement('div')
+            quadrado.style.margin = '8px'
+            quadrado.style.width = '100px'
+            quadrado.style.height = '100px'
+            quadrado.style.backgroundColor = 'red'
+
+            body.appendChild(quadrado)
+        }
+    </script>
+</body>
+</html>
