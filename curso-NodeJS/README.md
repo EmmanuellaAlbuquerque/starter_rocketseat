@@ -5,7 +5,7 @@
 <br>
 
 [Screens](#Screens) |
-[NodeAPI](https://github.com/EmmanuellaAlbuquerque/starter_rocketseat/tree/master/curso-NodeJS/node-api) |
+[NodeAPI](https://github.com/EmmanuellaAlbuquerque/starter_rocketseat/tree/master/curso-NodeJS/node-api)
 
 #### NodeJS course of Rocketseat Starter.
 
