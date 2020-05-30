@@ -1,0 +1,57 @@
+Instalando pacote
+npm install -g create-react-app
+
+- O React utiliza as versões mais novas do ECMAScript, logo o pacote create-react-app já vem com 
+a parte de transpilação configurada. — web pack, babel, etc...
+
+Para criar a aplicação:
+create-react-app huntweb
+
+cd huntweb
+npm start
+
+Deletando alguns arquivos:
+App.css
+App.test.js
+index.css
+logo.svg
+
+
+// stateless component VS normal component
+
+const Header = () => (
+    <h1>Hello</h1>
+);
+
+class Header extends Component {
+    render() {
+        return <h1>Hello</h1>
+    }
+} // utilizado em estado
+
+
+Buscando produtos da API
+
+Instalando Axios
+yarn add axios
+
+{this.state.products.map(product => {
+    return 
+})}
+
+OU
+
+// faz o return automaticamente
+{this.state.products.map(product => (
+
+))}
+
+
+Configurando navegação
+
+yarn add react-router-dom
+
+Navegando pro detalhe
+
+
+
