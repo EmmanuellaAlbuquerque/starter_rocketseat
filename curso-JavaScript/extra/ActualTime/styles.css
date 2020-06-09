@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 75vh;
 }
 
 .time p {
@@ -90,4 +90,18 @@ input {
 .fa-plus:hover,
 .fa-minus:hover {
   color: white;
+}
+
+.find {
+  color: #fffa;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.find a {
+  color: white;
+}
+
+.find a:hover {
+  text-decoration: underline;
 }

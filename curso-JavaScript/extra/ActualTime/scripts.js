@@ -77,7 +77,6 @@ function renderUrls() {
     let img = document.createElement("img");
 
     a.href = "https://" + url;
-    a.target = "_blank";
 
     img.width = "20";
     img.height = "20";
